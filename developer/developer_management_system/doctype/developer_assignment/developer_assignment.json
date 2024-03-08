@@ -1,0 +1,105 @@
+{
+ "actions": [],
+ "autoname": "DEA.YY.######",
+ "creation": "2024-03-08 14:06:07.186911",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "assignment_date",
+  "assignment_time",
+  "developer",
+  "developer_name",
+  "column_break_lwdac",
+  "task",
+  "column_break_aod24",
+  "obstacle",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "developer",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Developer",
+   "options": "Developer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_lwdac",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "task",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Task",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_aod24",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "obstacle",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Obstacle"
+  },
+  {
+   "default": "Today",
+   "fieldname": "assignment_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Assignment Date"
+  },
+  {
+   "fieldname": "assignment_time",
+   "fieldtype": "Time",
+   "label": "Assignment Time"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Developer Assignment",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "developer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Developer Name",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-03-08 14:30:12.075179",
+ "modified_by": "Administrator",
+ "module": "Developer Management System",
+ "name": "Developer Assignment",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "developer_name"
+}
